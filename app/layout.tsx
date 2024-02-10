@@ -5,9 +5,9 @@ import {
   Plus_Jakarta_Sans,
 } from "next/font/google";
 // import "./globals.css";
+import "./main.css";
 import "normalize.css";
 import "concrete.css";
-import "./main.css";
 import Link from "next/link";
 
 const WebFont = Plus_Jakarta_Sans({
@@ -62,6 +62,7 @@ export const metadata: Metadata = {
       type: "image/png",
     },
   ],
+  metadataBase: new URL("https://reng.my.id"),
 };
 
 export default function RootLayout({

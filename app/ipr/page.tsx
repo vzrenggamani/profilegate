@@ -30,26 +30,6 @@ export default function Ips() {
           karya teknologi pendidikan yang diselenggarakan oleh Mahasiswa
           Departemen Teknologi Pendiidkan Universitas Negeri Malang.
         </p>
-        <table>
-          <tr>
-            <th>Jenis</th>
-            <th>Pencatatan DGIP</th>
-            <th>Sitasi/DOI</th>
-          </tr>
-          <tr>
-            <td>Program Komputer</td>
-            <td>
-              <Link href="https://e-hakcipta.dgip.go.id/index.php/c?code=ZjdjYjVmYTkzMTI1Y2M4MzYyMjY5YTg1MWM2MTI2NWYK">
-                000475702
-              </Link>
-            </td>
-            <td>
-              <Link href="https://doi.org/10.5281/zenodo.10639741">
-                10.5281/zenodo.10639741
-              </Link>
-            </td>
-          </tr>
-        </table>
         <p>
           Jika anda menggunakan aplikasi tersebut, mohon untuk menyertakan
           referensi berikut:

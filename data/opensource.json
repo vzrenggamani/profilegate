@@ -1,14 +1,28 @@
 [
   {
-    "name": "",
-    "author": "",
-    "license": "",
-    "category": "",
-    "publisher": "",
-    "affiliation": "",
-    "repository_url": "",
-    "repository_host": "",
+    "id": "018d9397-2ac9-79ad-8dbf-146511ebca05",
+    "name": "Aksara Jawa / Hanacaraka",
+    "author": "Rengga Prakoso Nugroho",
+    "license": "ODC Public Domain Dedication and Licence (PDDL)",
+    "category": "Dataset",
+    "publisher": "Kaggle",
+    "affiliation": "Universitas Negeri Malang",
+    "repository_url": "https://www.kaggle.com/datasets/vzrenggamani/hanacaraka/",
+    "repository_host": "Kaggle",
     "copyright_records_number": "",
-    "doi": ""
+    "doi": "10.34740/kaggle/dsv/7510067"
+  },
+  {
+    "id": "018d9397-4f1d-7880-93b6-8dafa34cdfc7",
+    "name": "Analisis Sentimen Umpan Balik/Persepsi Pebelajar",
+    "author": "Rengga Prakoso Nugroho, Yerry Soepriyanto, Universitas Negeri Malang, Teknologi Pendidikan ID",
+    "license": "Creative Commons Attribution Share Alike 4.0 International",
+    "category": "Computational Notebook",
+    "publisher": "Zenodo",
+    "affiliation": "Universitas Negeri Malang, Teknologi Pendidikan ID",
+    "repository_url": "https://github.com/teknologi-pendidikan/research-sentimentanalysis",
+    "repository_host": "GitHub",
+    "copyright_records_number": "",
+    "doi": "10.5281/zenodo.10639896"
   }
 ]

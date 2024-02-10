@@ -40,44 +40,18 @@ export default function Home() {
           Center Teknologi Pendidikan. Dilindungi oleh hak cipta.
         </p>
         <p>
-          Silakan melihat <Link href="/ipr">daftar lengkap karya ciptaan</Link>{" "}
-          untuk melihat seluruh karya cipta yang telah dihasilkan.
+          Silakan melihat <Link href="/ipr">daftar lengkap karya ciptaan.</Link>
         </p>
-        <h3>Ringkasan karya ciptaan</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Nama</th>
-              <th>Jenis</th>
-              <th>Pencatatan</th>
-              <th>DOI</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data_ipr.map((ipr) => (
-              <tr key={ipr.copyright_records_number}>
-                <td>{ipr.name}</td>
-                <td>{ipr.copyright_records_type}</td>
-                <td>
-                  <Link
-                    href={`https://e-hakcipta.dgip.go.id/index.php/c?code=${ipr.copyright_url}`}
-                  >
-                    {ipr.copyright_records_number}
-                  </Link>
-                </td>
-                <td>
-                  {ipr.doi === "not available" ? (
-                    ipr.doi
-                  ) : (
-                    <Link href={`https://doi.org/${ipr.doi}`}>
-                      {ipr.doi.slice(8)}
-                    </Link>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        {data_ipr.map((ipr) => (
+          <div key={ipr.doi}>
+            <h3>
+              <Link href={ipr.copyright_url}>{ipr.name}</Link>
+            </h3>
+            <pre>
+              <code>{JSON.stringify(ipr, null, 2)}</code>
+            </pre>
+          </div>
+        ))}
       </section>
 
       <section id="opensource">
@@ -87,42 +61,18 @@ export default function Home() {
           terbuka dan dilisensikan untuk digunakan kembali.
         </p>
         <p>
-          Silakan melihat{" "}
-          <Link href="/opensource">daftar lengkap proyek sumber terbuka</Link>
+          Silakan melihat <Link href="/opensource">daftar lengkap proyek.</Link>
         </p>
-        <h3>Ringkasan proyek</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Nama</th>
-              <th>Jenis</th>
-              <th>Repository</th>
-              <th>DOI</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data_opensource.map((opensource) => (
-              <tr key={opensource.doi}>
-                <td>{opensource.name}</td>
-                <td>{opensource.category}</td>
-                <td>
-                  <Link href={opensource.repository_url}>
-                    {opensource.repository_host}
-                  </Link>
-                </td>
-                <td>
-                  {opensource.doi === "not available" ? (
-                    opensource.doi
-                  ) : (
-                    <Link href={`https://doi.org/${opensource.doi}`}>
-                      {opensource.doi.slice(8)}
-                    </Link>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        {data_opensource.map((opensource) => (
+          <div key={opensource.doi}>
+            <h3>
+              <Link href={opensource.repository_url}>{opensource.name}</Link>
+            </h3>
+            <pre>
+              <code>{JSON.stringify(opensource, null, 2)}</code>
+            </pre>
+          </div>
+        ))}
       </section>
     </>
   );
