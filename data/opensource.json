@@ -3,14 +3,22 @@
     "id": "018d9397-2ac9-79ad-8dbf-146511ebca05",
     "name": "Aksara Jawa / Hanacaraka",
     "author": "Rengga Prakoso Nugroho",
-    "license": "ODC Public Domain Dedication and Licence (PDDL)",
+    "license": "https://opendatacommons.org/licenses/pddl/1-0/",
+    "license_short": "ODC PDDL",
     "category": "Dataset",
     "publisher": "Kaggle",
     "affiliation": "Universitas Negeri Malang",
     "repository_url": "https://www.kaggle.com/datasets/vzrenggamani/hanacaraka/",
     "repository_host": "Kaggle",
     "copyright_records_number": "",
-    "doi": "10.34740/kaggle/dsv/7510067"
+    "doi": "10.34740/kaggle/dsv/7510067",
+    "year": "2024",
+    "version": "2024",
+    "format": "PNG, JPG, CSV",
+    "temporal_coverage": "not available",
+    "spatial_coverage": "Indonesia, Jawa Timur",
+    "keywords": "aksara jawa, hanacaraka, tulisan tangan",
+    "description": "Kumpulan tulisan tangan hanacaraka yang dibuat secara digital oleh berbagai manusia yang bersliweran di Internet. Tulisan tangan dibuat secara digital dengan memanfaatkan sebuah papan digital yang dikirimkan melalui kuesioner online. Tidak hanya itu juga, ada beberapa yang dibuat secara manual dan dipindai secara digital."
   },
   {
     "id": "018d9397-4f1d-7880-93b6-8dafa34cdfc7",
@@ -23,6 +31,7 @@
     "repository_url": "https://github.com/teknologi-pendidikan/research-sentimentanalysis",
     "repository_host": "GitHub",
     "copyright_records_number": "",
+    "year": "2023",
     "doi": "10.5281/zenodo.10639896"
   }
 ]
