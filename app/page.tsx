@@ -33,46 +33,82 @@ export default function Home() {
         </p>
       </header>
 
+      {/* <section id="publications">
+        <h2>
+          <Link href="/publications">Publikasi Artikel</Link>
+        </h2>
+        <p>
+          Publikasi artikel, preprint dan laporan penelitian. peer-reviewed &
+          non-reviewed
+        </p>
+        <div>
+          <h3>non-peer review</h3>
+          <ul>
+            {data_ipr.map((ipr) => (
+              <li className="ipr-list" key={ipr.id}>
+                <Link href={`/ipr/${ipr.id}`}>{ipr.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section> */}
+
       <section id="ipr">
-        <h2>Hak Kekayaan Intelektual</h2>
+        <h2>
+          <Link href="/ipr">Hak Kekayaan Intelektual</Link>
+        </h2>
         <p>
           Ciptaan yang telah dikembangkan oleh tim laboratorium & Learning
-          Center Teknologi Pendidikan. Dilindungi oleh hak cipta.
+          Center Teknologi Pendidikan.
         </p>
-        <p>
-          Silakan melihat <Link href="/ipr">daftar lengkap karya ciptaan.</Link>
-        </p>
-        {data_ipr.map((ipr) => (
-          <div key={ipr.doi}>
-            <h3>
-              <Link href={ipr.copyright_url}>{ipr.name}</Link>
-            </h3>
-            <pre>
-              <code>{JSON.stringify(ipr, null, 2)}</code>
-            </pre>
-          </div>
-        ))}
+        <ul>
+          {data_ipr.map((ipr) => (
+            <li className="ipr-list" key={ipr.id}>
+              <Link href={`/ipr/${ipr.id}`}>{ipr.name}</Link>
+            </li>
+          ))}
+        </ul>
       </section>
 
-      <section id="opensource">
-        <h2>Proyek Sumber Terbuka</h2>
+      <section id="dataset">
+        <h2>
+          <Link href="/dataverse">Dataset Penelitian</Link>
+        </h2>
         <p>
-          Ciptaan yang didedikasikan untuk masyarakat umum. Dikembangkan secara
-          terbuka dan dilisensikan untuk digunakan kembali.
+          Data terbuka dari hasil penelitian yang telah dilakukan baik secara
+          tim & individu.
         </p>
-        <p>
-          Silakan melihat <Link href="/opensource">daftar lengkap proyek.</Link>
-        </p>
-        {data_opensource.map((opensource) => (
-          <div key={opensource.doi}>
-            <h3>
-              <Link href={opensource.repository_url}>{opensource.name}</Link>
-            </h3>
-            <pre>
-              <code>{JSON.stringify(opensource, null, 2)}</code>
-            </pre>
-          </div>
-        ))}
+        <ul>
+          {data_opensource
+            .filter(
+              (item) =>
+                item.category === "dataset" || item.category === "Dataset"
+            )
+            .map((item) => (
+              <li className="ipr-list" key={item.id}>
+                <Link href={`/dataverse/${item.id}`}>{item.name}</Link>
+              </li>
+            ))}
+        </ul>
+      </section>
+
+      <section id="software">
+        <h2>
+          <Link href="/opensource">Software</Link>
+        </h2>
+        <p>Hasil pengembangan perangkat lunak yang bersifat open source.</p>
+        <ul>
+          {data_opensource
+            .filter(
+              (item) =>
+                item.category === "software" || item.category === "Software"
+            )
+            .map((item) => (
+              <li className="ipr-list" key={item.id}>
+                <Link href={`/opensource/${item.id}`}>{item.name}</Link>
+              </li>
+            ))}
+        </ul>
       </section>
     </>
   );
