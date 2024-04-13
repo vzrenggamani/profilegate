@@ -1,4 +1,5 @@
 import Link from "next/link";
+import data_ipr from "@/data/ipr.json";
 
 export default function Ips() {
   return (
@@ -15,39 +16,20 @@ export default function Ips() {
           dilindungi oleh hak cipta.
         </p>
         <p>
-          Penggunaan diperbolehkan dengan mematuhi{" "}
-          <Link href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-            lisensi CC BY-NC-SA 4.0.
-          </Link>
+          Penggunaan diperbolehkan dengan mematuhi lisensi yang tertera pada
+          setiap ciptaan.
         </p>
       </header>
 
       <section>
-        <h3>Pameran Karya Teknologi Pendidikan UM</h3>
-        <p>
-          Pameran Karya Teknologi Pendidikan 2023 adalah sebuah aplikasi
-          berbasis web yang dibuat untuk memudahkan pengelolaan data pameran
-          karya teknologi pendidikan yang diselenggarakan oleh Mahasiswa
-          Departemen Teknologi Pendiidkan Universitas Negeri Malang.
-        </p>
-        <p>
-          Jika anda menggunakan aplikasi tersebut, mohon untuk menyertakan
-          referensi berikut:
-        </p>
-        <code>
-          <pre>
-            {`@software{nugroho_2024_10639741,
-  author       = {Nugroho, Rengga Prakoso and Ubaiddillah, Mohammad},
-  title        = {Pameran Karya Teknologi Pendidikan UM},
-  month        = feb,
-  year         = 2024,
-  publisher    = {Zenodo},
-  version      = {v1.0.0},
-  doi          = {10.5281/zenodo.10639741},
-  url          = {https://doi.org/10.5281/zenodo.10639741}
-}`}
-          </pre>
-        </code>
+        <h3>Daftar Kekayaan Intelektual</h3>
+        <ul>
+          {data_ipr.map((item) => (
+            <li key={item.id}>
+              <Link href={`/ipr/${item.id}`}>{item.name}</Link>
+            </li>
+          ))}
+        </ul>
       </section>
     </main>
   );
