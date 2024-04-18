@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@excalidraw/excalidraw':
+    specifier: ^0.17.5
+    version: 0.17.5(react-dom@18.2.0)(react@18.2.0)
   concrete.css:
     specifier: ^2.1.1
     version: 2.1.1
@@ -105,6 +108,16 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@excalidraw/excalidraw@0.17.5(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-XtFtzhQvt5g8quj1KmVQ6LBgv3M5WGDOm50dTcQz9Royc6AImh2X1Zw6ULcsujsjMFFBbG46nJLELsd/6yLlIw==}
+    peerDependencies:
+      react: ^17.0.2 || ^18.2.0
+      react-dom: ^17.0.2 || ^18.2.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}

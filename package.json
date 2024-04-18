@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@excalidraw/excalidraw": "^0.17.5",
     "concrete.css": "^2.1.1",
     "next": "14.1.0",
     "normalize.css": "^8.0.1",
