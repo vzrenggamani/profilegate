@@ -1,6 +1,6 @@
 import data_iprs from "@/data/ipr.json";
 import Link from "next/link";
-import ClipboardButton from "@/app/components/ClipboardButton";
+import ClipboardButton from "@/components/ClipboardButton";
 import type { Metadata, ResolvingMetadata } from "next";
 
 interface Params {
