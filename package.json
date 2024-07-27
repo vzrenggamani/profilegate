@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@excalidraw/excalidraw": "^0.17.6",
+    "bibtex-parse-js": "^0.0.24",
     "concrete.css": "^2.1.2",
     "next": "^14.2.5",
     "normalize.css": "^8.0.1",
