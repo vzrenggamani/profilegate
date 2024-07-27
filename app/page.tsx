@@ -1,57 +1,49 @@
 import Link from "next/link";
 import data_ipr from "@/data/ipr.json";
 import data_opensource from "@/data/opensource.json";
+import socialmedia from "@/data/socialmedia.json";
 
 export default function Home() {
   return (
     <>
       <header>
         <h1>Rengga Prakoso Nugroho</h1>
+        <p>Empowering the nation through meaningful education.</p>
         <p>
-          Mahasiswa departemen{" "}
-          <Link href="https://tep.fip.um.ac.id">Teknologi Pendidikan, </Link>
-          Universitas Negeri Malang.
+          A dedicated researcher and educator deeply passionate about harnessing
+          technology to revolutionize learning experiences.
         </p>
         <p>
-          Sering meluangkan waktu bereksperimen dengan teknologi. Suka menulis
-          di blog dan membuat video di YouTube.
+          In essence, I am Rengga Prakoso Nugroho—a dynamic researcher and
+          educator committed to reshaping the future of education through
+          technology. With a strong foundation in educational theory and
+          practical expertise in technology integration, I’m poised to make
+          meaningful contributions to the ever-evolving landscape of learning.
         </p>
 
         <h2>
           <small>Research & Social Profile</small>
         </h2>
-        <p>
-          <Link href="https://scholar.google.com/citations?user=ftyl1Q0AAAAJ">
-            scholar
-          </Link>{" "}
-          | <Link href="https://orcid.org/0000-0002-7604-7150">orcid</Link> |{" "}
-          <Link href="https://www.researchgate.net/profile/Rengga-Nugroho">
-            researchgate
-          </Link>{" "}
-          | <Link href="https://renggaprakosonugroho.my.id">blog</Link> |{" "}
-          <Link href="https://youtube.com/@vzrenggamani">youtube</Link>
-        </p>
+        <div>
+          {socialmedia.map((item, index) => (
+            <span key={item.name}>
+              <Link href={item.url}>{item.name}</Link>
+              {index < socialmedia.length - 1 && " | "}
+            </span>
+          ))}
+        </div>
       </header>
 
-      {/* <section id="publications">
+      <section id="publications">
         <h2>
-          <Link href="/publications">Publikasi Artikel</Link>
+          <Link href="/publications">Publikasi Riset</Link>
         </h2>
         <p>
           Publikasi artikel, preprint dan laporan penelitian. peer-reviewed &
           non-reviewed
         </p>
-        <div>
-          <h3>non-peer review</h3>
-          <ul>
-            {data_ipr.map((ipr) => (
-              <li className="ipr-list" key={ipr.id}>
-                <Link href={`/ipr/${ipr.id}`}>{ipr.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section> */}
+        <Link href={`/publications`}>Lihat semua publikasi</Link>
+      </section>
 
       <section id="ipr">
         <h2>

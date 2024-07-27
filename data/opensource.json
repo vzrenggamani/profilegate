@@ -24,7 +24,8 @@
     "id": "018d9397-4f1d-7880-93b6-8dafa34cdfc7",
     "name": "Analisis Sentimen Umpan Balik/Persepsi Pebelajar",
     "author": "Rengga Prakoso Nugroho, Yerry Soepriyanto, Universitas Negeri Malang, Teknologi Pendidikan ID",
-    "license": "Creative Commons Attribution Share Alike 4.0 International",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "license_short": "CC BY-NC-SA 4.0",
     "category": "Software",
     "publisher": "Zenodo",
     "affiliation": "Universitas Negeri Malang, Teknologi Pendidikan ID",
@@ -32,6 +33,7 @@
     "repository_host": "GitHub",
     "copyright_records_number": "",
     "year": "2023",
-    "doi": "10.5281/zenodo.10639896"
+    "doi": "10.5281/zenodo.10639896",
+    "description": "Analisis Sentimen Umpan Balik/Persepsi Pebelajar: Leveraging the use of Google NLP API for Educational Research and Evaluation. Selama menjelajah penelitian tentang Sentimen Analisis di Google Schoolar, tidak banyak penelitiaan yang bertopik tentang pendidikan. Jikapun ada, tidak membahas konsep pemanfaatan sentimen analisis melainkan menguji hasil model yang dikembangkan. Jika dilihat dari kacamata Teknologi Pendidikan, mungkin kurang tepat untuk menuliskan penelitian tentang modelling NLP."
   }
 ]

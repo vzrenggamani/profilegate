@@ -36,7 +36,7 @@ export async function generateMetadata(
         url: "https://orcid.org/0000-0002-7604-7150",
       },
     ],
-    category: "dataset",
+    category: "SoftwareApplication",
     creator: item?.author || "Rengga Prakoso Nugroho",
     abstract: item?.description || "Dataset Tidak Ditemukan",
     generator: "Rengga Prakoso Nugroho",
@@ -56,7 +56,7 @@ export default function ProjectDataverse({ params }: Params) {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Dataset",
+    "@type": "SoftwareApplication",
     name: item.name,
     description: item.description,
     creator: [
@@ -121,10 +121,10 @@ export default function ProjectDataverse({ params }: Params) {
             License: <a href={item.license}>{item.license_short}</a>
           </small>
         </p>
-        {/* add download button to the repository url */}
+        {/* add download button to the software url */}
         <button>
           <Link style={{ textDecoration: "none" }} href={item.repository_url}>
-            Download Dataset
+            Baca lebih lanjut
           </Link>
         </button>
       </header>
@@ -132,22 +132,6 @@ export default function ProjectDataverse({ params }: Params) {
       <section>
         <h2>Deskripsi</h2>
         <p>{item.description}</p>
-      </section>
-
-      <section>
-        <h2>Metadata</h2>
-        <dl>
-          <dt>Keywords</dt>
-          <dd>{item.keywords}</dd>
-          <dt>Format</dt>
-          <dd>{item.format}</dd>
-          <dt>Versi</dt>
-          <dd>{item.version}</dd>
-          <dt>Cakupan Temporal</dt>
-          <dd>{item.temporal_coverage}</dd>
-          <dt>Cakupan Spasial</dt>
-          <dd>{item.spatial_coverage}</dd>
-        </dl>
       </section>
 
       <section>
