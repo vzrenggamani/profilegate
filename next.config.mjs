@@ -12,6 +12,11 @@ const nextConfig = {
             destination: 'https://drive.google.com/drive/folders/1Y6eR2oJ2k3CLzPGrY-LvwoCHR9nCCanE?usp=sharing',
             permanent: true,
           },
+            {
+            source: '/cv',
+            destination: 'https://file.reng.my.id/src/docs/RenggaPrakosoNugroho_CV.pdf',
+            permanent: true,
+          },
         ]
       },
 };
