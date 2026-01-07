@@ -40,7 +40,7 @@ Core themes of inquiry
 
 He actively pursues publication in Scopus-indexed journals and contributes to strengthening the knowledge base of the Indonesian Educational Technology ecosystem.
 
-ORCiD Profile: [https://orcid.org/0000-0002-7604-7150](https://orcid.org/0000-0002-7604-7150)
-Scopus Id: [https://www.scopus.com/authid/detail.uri?authorId=59509084400](https://www.scopus.com/authid/detail.uri?authorId=59509084400)
-Google Scholar: [https://scholar.google.com/citations?user=ftyl1Q0AAAAJ](https://scholar.google.com/citations?user=ftyl1Q0AAAAJ)
-ResearchGate: [https://researchgate.net/profile/Rengga-Nugroho](https://researchgate.net/profile/Rengga-Nugroho)
+- ORCiD Profile: [https://orcid.org/0000-0002-7604-7150](https://orcid.org/0000-0002-7604-7150)
+- Scopus Id: [https://www.scopus.com/authid/detail.uri?authorId=59509084400](https://www.scopus.com/authid/detail.uri?authorId=59509084400)
+- Google Scholar: [https://scholar.google.com/citations?user=ftyl1Q0AAAAJ](https://scholar.google.com/citations?user=ftyl1Q0AAAAJ)
+- ResearchGate: [https://researchgate.net/profile/Rengga-Nugroho](https://researchgate.net/profile/Rengga-Nugroho)
